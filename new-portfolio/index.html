@@ -18,6 +18,9 @@
 	<link rel="stylesheet" type="text/css" href="fonts/icomoon.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,8 +36,9 @@
 			<ul class="nav__list">
 				<li class="nav__list-item active-nav"><a href="index.html" class="hover-target">Home</a></li>
 				<li class="nav__list-item"><a href="about.html" class="hover-target">About <span class="badge bg-primary text-white fs-6">PRO</span></a></li>
+				<li class="nav__list-item"><a href="education.html" class="hover-target">Education <span class="badge bg-primary text-white fs-6">PRO</span></a></li>
 				<li class="nav__list-item"><a href="contact.html" class="hover-target">Contact <span class="badge bg-primary text-white fs-6">PRO</span></a></li>
-				<li class="nav__list-item"><a href="portfolio.html" class="hover-target">Portfolio <span class="badge bg-primary text-white fs-6">PRO</span></a></li>
+				<li class="nav__list-item"><a href="project.html" class="hover-target">Projects <span class="badge bg-primary text-white fs-6">PRO</span></a></li>
 				<li class="nav__list-item"><a href="blog.html" class="hover-target">Blog <span class="badge bg-primary text-white fs-6">PRO</span></a></li>
 				<li class="nav__list-item"><a href="single.html" class="hover-target">Single <span class="badge bg-primary text-white fs-6">PRO</span></a></li>
 				<li class="nav__list-item"><a href="styles.html" class="hover-target">Styles <span class="badge bg-primary text-white fs-6">PRO</span></a></li>
@@ -46,17 +50,35 @@
 		<div class="container-fluid">
 			<div class="row">
 				<nav class="navbar navbar-expand-lg py-4">
-					<div class="navbar-brand">
-						<a href="index.html" style="font-size: larger; color:cadetblue ">
-							<img src="images/logo.svg" style="position: relative; left: 10px; bottom:5px" alt="logo"> &nbsp;Akshaya
-						</a>
-					</div>
+					<div class="navbar-brand" style="display: flex; align-items: center; gap: 12px;">
+  <a href="index.html" style="
+      display: flex;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: cadetblue;
+      text-decoration: none;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+    ">
+    <img src="images/logo.svg" alt="logo" style="
+      height: 45px;
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      margin-right: 8px;
+    ">
+    Akshaya
+  </a>
+</div>
 
 					<div class="navbar-collapse collapse justify-content-end me-5 " id="slide-navbar-collapse">
 						<ul id="slide-down" class="navbar-nav gap-4">
 							<li><a href="#billboard" class="nav-link active">Home</a></li>
 							<li><a href="#about" class="nav-link">About me</a></li>
-							<li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+							<li><a href="#education" class="nav-link">Education</a></li>
+							<li><a href="#project" class="nav-link">Projects</a></li>
 							<li><a href="#blog" class="nav-link">Blog</a></li>
 							<li><a href="#contact" class="nav-link">Contact</a></li>
 							<!--<li><a class="btn btn-outline-dark rounded-pill" href="https://templatesjungle.gumroad.com/l/alena-portfolio-html-template" target="_blank"><strong>Get PRO</strong></a></li>-->
@@ -98,14 +120,14 @@
 				</div>
 			</div>
 		</div>
-	</div><!--billboard-->
+	</div>
 
 	<section id="about" class="personal-info my-2 py-2 my-md-5 py-md-5">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
 					<figure data-aos="zoom-in-left">
-						<img src="images/photographer.jpg" class="img-fluid" alt="photographer">
+						<img src="images/new-img.jpeg" style="height: 650px; width: 550px;position: relative; bottom: 150px; " class="img-fluid" alt="photographer">
 					</figure>
 				</div>
 				<div class="col-md-6">
@@ -115,11 +137,15 @@
 						</div><!--section-header-->
 		
 						<div class="description">
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-								been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-								galley of type and scrambled it to make a type specimen book.</p>
-							<p>Nec eget condimentum etiam leo. Morbi at eget fusce feugiat volutpat et volutpat malesuada.
-								Suspendisse nisi, quam neque in leo sollicitudin. Quam neque in leo consectetur.</p>
+							<p>I'm Akshaya, a passionate and adaptable Full-Stack Developer with 1.7 years of professional experience 
+								in .NET Core, specializing in building robust backend systems and scalable web applications. 
+								After a recent career break, I actively upskilled in Python, Django, and Vue.js, expanding my capabilities 
+								in both frontend and backend development.
+
+                                I enjoy solving real-world problems through clean, efficient code and have hands-on experience in 
+								REST API development, user interface design, and integrating modern frontend technologies. 
+								I'm currently seeking opportunities where I can contribute to meaningful projects in Python/Django or 
+								.NET Core ideally within a dynamic and collaborative team.</p>
 						</div>
 		
 						<div class="btn-left">
@@ -131,13 +157,82 @@
 			</div>
 		</div>
 	</section>
+    <section id="education" class="latest-blogs my-2 py-2 my-md-5 py-md-5">
+      <div class="container">
 
-	<section class="portfolio" id="portfolio">
+		<div>
+		<h2 class="section-education" style="text-align: center; position:relative;bottom: 40px;">Education</h2>
+		</div><br><br>
+
+		<div class="row mb-5 pb-5">
+		<div class="col-md-6">
+			<div class="education-box mb-5">
+			<div class="meta-tags text-uppercase text-gray d-flex gap-3 fs-6 mb-3 align-items-center">
+				<span class="meta-date">2016-2019</span>
+				<span>ᐧ</span>
+				<span class="meta-category">Nehru College Of Engineering and Research Centre</span>
+			</div>
+			<h3 style="font-size:large">Masters of Computer Applications</h3>
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div class="education-box mb-5">
+			<div class="meta-tags text-uppercase text-gray d-flex gap-3 fs-6 mb-3 align-items-center">
+				<span class="meta-date">2014-2019</span>
+				<span>ᐧ</span>
+				<span class="meta-category">Nehru Arts and Science College</span>
+			</div>
+			<h3 style="font-size:large">Bachelor of Computer Applications</h3>
+			</div>
+		</div>
+    </div>
+  </div>
+</section>
+<div>
+		<h2 class="section-education" style="text-align: center; position:relative; bottom: 40px;">Experience</h2>
+		</div><br><br>
+<section class="experience-section">
+	
+  <div class="card" style="width: 500px;">
+    <div class="card-header">
+      <h2>Eclat Sky Technologies Pvt Ltd</h2>
+      <div class="logo-circle">
+        <span class="logo-text"><img src="images/eclatsky.png" alt="Logo" class="round-image">
+</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Software Engineer</h3>
+      <p class="duration">Jan 2023 – July 2024 </p>
+      <p >Developed and maintained scalable REST APIs using ASP.NETCore and SQL ServerBuilt and optimized database schemas
+		 and queries forPostgres.Designed and implemented RESTful APIs for seamlessintegration with front-end applications.
+		 Collaborated in an Agile team environment, ensuring high-quality deliverables through Git and GitFlow.Delivered
+		  tailored solutions for ERP modules, includingFinance, Inventory, and HR.</p>
+    </div>
+  </div>
+
+  <div class="card" style="width: 500px;">
+    <div class="card-header">
+      <h3>Skyniche Technologies</h3>
+      <div class="logo-circle">
+        <span class="logo-text"><img src="images/skyniche.png" alt="Logo" class="round-image"></span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>PHP Developer Intern</h3>
+      <p class="duration">July 2019 - Sept 2019</p>
+      <p>Developed client websites using PHP and CodeIgniter.Implemented MVC architecture and MySQL database.
+		Gained foundational experience in full-stack development.</p>
+    </div>
+  </div>
+</section>
+	<section class="project" id="project">
 		<div class="container-fluid">
 			<div class="row">
 
 				<div class="section-header text-center">
-					<h2 class="section-title">Portfolio</h2>
+					<h2 class="section-title">Projects</h2>
 					<p>These are actual works of <a href="https://www.pexels.com/@cottonbro/" target="_blank">cottonbro studio</a></p>
 				</div><!--section-header-->
 
@@ -210,76 +305,7 @@
 		</div>
 	</section>
 
-	<section id="blog" class="latest-blogs my-2 py-2 my-md-5 py-md-5">
-		<div class="container">
-
-			<div class="section-header my-5">
-				<h2 class="section-title">Blog</h2>
-			</div><!--section-header-->
-
-			<div class="row mb-5 pb-5">
-				<div class="col-md-6">
-					<div class="post-content mb-5">
-						<div class="meta-tags text-uppercase text-gray d-flex gap-3 fs-6 mb-3 align-items-center">
-							<span class="meta-date">Jan.30.2020</span>
-							<span>ᐧ</span>
-							<span class="meta-category"><a href="#">Trends</a></span>
-						</div>
-						<h3 class="post-title mb-3"><a href="single-blog.html">Why The Trend Of Minimalism?</a></h3>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-							has been the industry's standard dummy text ever.</p>
-					</div>
-				</div><!--post-item-->
-
-				<div class="col-md-6">
-					<div class="post-content mb-5">
-						<div class="meta-tags text-uppercase text-gray d-flex gap-3 fs-6 mb-3 align-items-center">
-							<span class="meta-date">Jan.30.2020</span>
-							<span>ᐧ</span>
-							<span class="meta-category"><a href="#">Trends</a></span>
-						</div>
-						<h3 class="post-title mb-3"><a href="single-blog.html">Simple Tips & Tricks Of Photography</a>
-						</h3>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-							has been the industry's standard dummy text ever.</p>
-					</div>
-				</div><!--post-item-->
-
-				<div class="col-md-6">
-					<div class="post-content mb-5">
-						<div class="meta-tags text-uppercase text-gray d-flex gap-3 fs-6 mb-3 align-items-center">
-							<span class="meta-date">Jan.30.2020</span>
-							<span>ᐧ</span>
-							<span class="meta-category"><a href="#">Collections</a></span>
-						</div>
-						<h3 class="post-title mb-3"><a href="single-blog.html">World's Top Photograph Collections</a>
-						</h3>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-							has been the industry's standard dummy text ever.</p>
-					</div>
-				</div><!--post-item-->
-
-				<div class="col-md-6">
-					<div class="post-content mb-5">
-						<div class="meta-tags text-uppercase text-gray d-flex gap-3 fs-6 mb-3 align-items-center">
-							<span class="meta-date">Jan.30.2020</span>
-							<span>ᐧ</span>
-							<span class="meta-category"><a href="#">Portraits</a></span>
-						</div>
-						<h3 class="post-title mb-3"><a href="single-blog.html">How To Get Model Look Portraits</a></h3>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-							has been the industry's standard dummy text ever.</p>
-					</div>
-				</div><!--post-item-->
-
-			</div><!--post-content-->
-
-			<div class="btn-left">
-				<a href="#" class="btn btn-dark px-5 py-3">View All Blog</a>
-			</div>
-
-		</div>
-	</section>
+	
 
 	<section id="contact" class="contact-detail my-5 bg-secondary">
 		<div class="container">
